@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air India Flight Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ixigo_flight.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav_list">
+                <div class="logo">
+                    <a href="#">
+                        <img class="ixigo-logo" src="https://images.ixigo.com/image/upload/f_auto/price-lock/4355a2fa92b6f3e749638d82ad1a56ae-znzzz.png" alt="ixigo.com" title="ixigo.com" width="83" height="39" >
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-solid fa-plane-up"></i>
+                        <span class="text">Flight</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-solid fa-train-subway"></i>
+                        <span class="text">Trains</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-solid fa-bus"></i>
+                        <span class="text">Buses</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-solid fa-hotel"></i>
+                        <span class="text">Hotels</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <span class="text">Visa</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-sharp-duotone fa-regular fa-grid-round"></i>
+                        <span class="text">More</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-tags"></i>
+                        <span class="text">Offers</span>    
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-duotone fa-solid fa-phone"></i>
+                        <span class="text">Customer Service</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="text">Login/SignUp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flight-form">
+            <h1>Air India Flight Booking</h1>
+            <div class="form-fields">
+                <div class="input_cont">
+                    <div class="input_label">From</div>
+                    <input type="text" name="Enter city or airport" placeholder="Enter city or airport">
+                </div>
+                <div class="input_cont">
+                    <div class="input_label">To</div>
+                    <input type="text" name="Enter city or airport" placeholder="Enter city or airport">
+                </div>
+                <div class="input_cont">
+                    <div class="input_label">Departure</div>
+                    <input type="Date" name="Departure" placeholder="Departure">
+                </div>
+                <div class="input_cont">
+                    <div class="input_label">Return</div>
+                    <input type="text" name="Return" placeholder="Return">
+                </div>
+                <div class="input_cont">
+                    <div class="input_label">Travellers | Class</div>
+                    <input type="text" name="Travellers | Class" value="1 Passenger, Economy">
+                </div>
+                <div class="search">
+                    <button>Search</button>
+                </div>
+            </div>
+            <div class="special_fares">
+                <div class="spl_txt">Special Fares(Optional):</div>
+                <div class="tooltip1">
+                    <!-- <img src="/rt-udaan/pc/img/specialFares/student.svg" alt="avatar" height="24px" width="24px"> -->
+                    <span>Student</span>
+                </div>
+                <div class="tooltip2">
+                    <!-- <img src="/rt-udaan/pc/img/specialFares/seniorCitizen.svg" alt="avatar" height="24px" width="24px"> -->
+                    <span>Senior Citizen</span>
+                </div>
+                <div class="tooltip3">
+                    <!-- <img src="/rt-udaan/pc/img/specialFares/armedForces.svg" alt="avatar" height="24px" width="24px"> -->
+                    <span>Armed Forces</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <ul class="breadcrumbs">
+            <li>
+                <a href="#">Home</a>
+                <span class="arrow">>></span>
+            </li>
+            <li>
+                <a href="#">Airlines</a>
+                <span class="arrow">>></span>
+            </li>
+            <li>
+                <a href="#">Air India</a>
+                <span class="arrow">>></span>
+            </li>
+        </ul>
+        <div class="page-layout">
+            <div class="layout1">
+                <span class="tax">* price is per adult & includes taxes and fees</span>
+                <div class="trending_widget">
+                    <h2 class="title-text">
+                        Air India Domestic Flights
+                    </h2>
+                    <div class="airline_card_cont">
+                        <div class="airline_card_head">
+                            <div class="airline">Airline</div>
+                            <div class="airport_code_from">From</div>
+                            <div class="timeline"></div>
+                            <div class="airport_code_to">To</div>
+                            <div class="fare">Cheapest Fare</div>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">BOM</div>
+                                <div class="city">Mumbai</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">13 Jan 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">GOI</div>
+                                <div class="city">Goa</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>2682</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">MAA</div>
+                                <div class="city">Chennai</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">14 Jan 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">BLR</div>
+                                <div class="city">Bengaluru</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>2701</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">AMD</div>
+                                <div class="city">Ahmedabad</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">02 Mar 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">GOI</div>
+                                <div class="city">Goa</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>2750</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">BOM</div>
+                                <div class="city">Mumbai</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">14 Jan 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">AMD</div>
+                                <div class="city">Ahmedabad</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>2825</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">HYD</div>
+                                <div class="city">Hyderabad</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">26 Jan 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">MAA</div>
+                                <div class="city">Chennai</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>2841</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="price_update">
+                            <span>Price last updated at 18:55:29 09 Jan 2025</span>
+                        </div>
+                        <div class="viewmore">
+                            <span>View More Results</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- international_airlines -->
+                <div class="trending_widget">
+                    <h2 class="title-text">
+                        Air India International Flights
+                    </h2>
+                    <div class="airline_card_cont">
+                        <div class="airline_card_head">
+                            <div class="airline">Airline</div>
+                            <div class="airport_code_from">From</div>
+                            <div class="timeline"></div>
+                            <div class="airport_code_to">To</div>
+                            <div class="fare">Cheapest Fare</div>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">BOM</div>
+                                <div class="city">Mumbai</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">28 Jan 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">KTM</div>
+                                <div class="city">Kathmandu</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>8083</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">MAA</div>
+                                <div class="city">Chennai</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">28 Jan 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">DAC</div>
+                                <div class="city">Dhaka</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>8107</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">AMD</div>
+                                <div class="city">Ahmedabad</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">22 Mar 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">DAC</div>
+                                <div class="city">Dhaka</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>8199</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">KWI</div>
+                                <div class="city">Kuwait</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">17 Feb 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">HYD</div>
+                                <div class="city">Hyderabad</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>8212</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="airline_card">
+                            <div class="airline_logo">
+                                <img src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" alt="Air India Logo" height="40" width="50">
+                            </div>
+                            <div class="airport-code-from">
+                                <div class="airport_code">ZVJ</div>
+                                <div class="city">Abu Dhabi</div>
+                            </div>
+                            <div class="time-line">
+                                <div class="label_date">03 Feb 2025</div>
+                                <div class="timeline_line">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            <div class="airport-code-to">
+                                <div class="airport_code">BOM</div>
+                                <div class="city">Mumbai</div>
+                            </div>
+                            <div class="fare-price">
+                                <div class="price"><span>&#8377</span>8217s</div>
+                            </div>
+                            <button class="select"><a href="#">SELECT</a></button>
+                        </div>
+                        <div class="price_update">
+                            <span>Price last updated at 18:55:29 09 Jan 2025</span>
+                        </div>
+                        <div class="viewmore">
+                            <span>View More Results</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- airline container info -->
+            <div class="pg-sub-head">
+                Book Air India domestic and international flights. Get latest Air India Airline flight routes and schedule. We offer FULL INSTANT REFUNDS when you cancel your flight with 'ixigo assured' fares. No documentation required, No questions asked. Offers on Air India Airline: Upto 25% Off on domestic &amp; international Air India flights.
+            </div>
+            <div class="airline-content c-card">
+                <style type="text/css">
+                    p{
+                        margin: 10px 0 0 0;
+                    }
+                    h2{
+                        margin: 25px 0 7px;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    ul{
+                        margin: 10px 0;
+                    }
+                </style>
+                <section>
+                    <h2><strong>Air India Connectivity and Fleet Information</strong></h2>
+                    <p>Air India, the flagship carrier of India, boasts a robust network that spans both domestic and international destinations. With over 100 destinations worldwide and an impressive fleet, Air India connects major Indian cities to global hubs.</p>
+                    <h3>Fleet Information:</h3>
+                    <ul>
+                        <li><strong>Boeing 777 and 787 Dreamliners:</strong>Used primarily for international long-haul flights, offering modern amenities and extensive range capabilities.</li>
+                        <li><strong>Airbus A320 Family:</strong>Used for domestic and short-haul international flights, known for their efficiency and comfort.</li>
+                        <li><strong>Boeing 747:</strong>Occasionally used for long-haul routes and VIP flights.</li>
+                        <li><strong>ATR 72 and Airbus A319:</strong>Serving regional and tier-2 city routes, providing connectivity to smaller destinations.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2><strong>Baggage Allowance Policy of Air India</strong></h2>
+                    <h3>Cabin Baggage:</h3>
+                    <ul>
+                        <li><strong>Economy Class:</strong>Passengers can carry one cabin bag weighing up to 8 kg.</li>
+                        <li><strong>Executive / Business Class:</strong>Passengers are allowed one cabin bag up to 12 kg.</li>
+                    </ul>
+                    <h3>Checked Baggage:</h3>
+                    <h4>Domestic Flights:</h4>
+                    <ul>
+                        <li><strong>Economy Class:</strong>Up to 25 kg.</li>
+                        <li><strong>Executive Class:</strong>Up to 35 kg.</li>
+                    </ul>
+                    <h4>International Flights:</h4>
+                    <ul>
+                        <li><strong>Economy Class:</strong>Generally, up to 23 kg per bag (2 bags allowed).</li>
+                        <li><strong>Business/First Class:</strong>Generally, Economy Class allows up to 23 kg per bag (2 bags), and Business Class allows up to 32 kg per bag (2 bags). It may vary based on the destination.</li>
+                    </ul>
+                    <p>Note: Baggage allowances can vary by route and fare type. Always check your ticket details for specific allowances. Know more about Air<a href="#">India baggage allowance.</a></p>
+                </section>
+                <section>
+                    <h2><strong>Services Provided by Air India</strong></h2>
+                    <ul>
+                        <li><strong>In-flight Entertainment</strong>Passengers have access to a wide range of movies, TV shows, music, and games via personal screens.</li>
+                        <li><strong>Meals:</strong>Complimentary meals and beverages are provided on all flights. Special meal requests (vegetarian, diabetic, gluten-free, etc.) can be accommodated.</li>
+                        <li><strong>Lounge Services:</strong>Premium lounges at major airports offer a comfortable environment with refreshments, Wi-Fi, and business services for Executive/Business Class passengers.</li>
+                        <li><strong>Frequent Flyer Program:</strong>The 'Flying Returns' program allows passengers to earn and redeem miles for flights, upgrades, and other benefits.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2><strong>Popular Routes Operated by Air India</strong></h2>
+                    <h3>Domestic Popular Routes:</h3>
+                    <ul>
+                        <li>Delhi to Mumbai</li>
+                        <li>Mumbai to Bengaluru</li>
+                        <li>Delhi to Chennai</li>
+                        <li>Delhi to Kolkata</li>
+                        <li>Mumbai to Hyderabad</li>
+                        <li>Delhi to Hyderabad</li>
+                        <li>Mumbai to Chennai</li>
+                        <li>Bengaluru to Kolkata</li>
+                        <li>Delhi to Bengaluru</li>
+                        <li>Mumbai to Goa</li>
+                    </ul>
+                    <h3>International Popular Routes:</h3>
+                    <ul>
+                        <li>Delhi to New York</li>
+                        <li>Mumbai to London</li>
+                        <li>Delhi to London</li>
+                        <li>Mumbai to Dubai</li>
+                        <li>Delhi to Frankfurt</li>
+                        <li>Delhi to Singapore</li>
+                        <li>Delhi to Toronto</li>
+                        <li>Mumbai to Newark</li>
+                        <li>Delhi to Sydney</li>
+                        <li>Delhi to San Francisco</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2><strong>Web Check-in and Verification Process of Air India</strong></h2>
+                    <h3>Web Check-In:</h3>
+                    <ul>
+                        <li>Go to the Air India website or open the Air India mobile app.</li>
+                        <li>Enter your PNR number and last name to retrieve your booking.</li>
+                        <li>Choose your preferred seat from the available options.</li>
+                        <li>Download and print your boarding pass or save it on your mobile device.</li>
+                    </ul>
+                    <h3>Steps for "Smart Web Check-In" using ixigo:</h3>
+                    <ul>
+                        <li>Go to the ixigo website or App</li>
+                        <li>Log in to your account</li>
+                        <li>Navigate to 'My Trips' and select the flight for Check-In</li>
+                        <li>Select 'Smart Check-In' or 'Web Check-In'</li>
+                        <li>Enter Passenger Details and choose your preferred seats, if available.</li>
+                        <li>Review all the entered details and Confirm</li>
+                    </ul>
+                    <h3>Verification Process:</h3>
+                    <ul>
+                        <li>For domestic flights, carry a government-issued photo ID (e.g., Aadhaar, PAN card, driving license).</li>
+                        <li>For international flights, a valid passport and visa are required.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2><strong>Air India Refund and Cancellation Policies</strong></h2>
+                    <p>Air India's refund and cancellation policies are designed to offer flexibility and convenience to passengers, though specific terms and conditions can vary based on the fare class and route.</p>
+                    <h3>Cancellation Policies:</h3>
+                    <h4>Domestic Flights:</h4>
+                    <ul>
+                        <li><strong>Economy:</strong>A cancellation fee is applicable, and the remaining amount is refunded.</li>
+                        <li><strong>Executive/Business Class:</strong>Cancellation fees are generally lower, and the balance is refunded.</li>
+                    </ul>
+                    <h4>International Flights:</h4>
+                    <ul>
+                        <li><strong>Economy and Business Class:</strong>Cancellation fees apply, and the terms can vary based on the fare category and route.</li>
+                    </ul>
+                    <h3>Refund Process:</h3>
+                    <ul>
+                        <li>Cancellations and refund requests can be initiated through the Air India website, mobile app, or contact customer service.</li>
+                        <li>Provide the necessary booking details and identification.</li>
+                        <li>Refunds are typically processed within 7-10 business days of the original mode of payment.</li>
+                    </ul>
+                    <p>Note: Non-refundable tickets may not be eligible for a refund but could be eligible for travel credit. Always check the fare rules at the time of booking.</p>
+                </section>
+                <section>
+                    <h2><strong>Air India Travel Documents</strong></h2>
+                    <p>Traveling with Air India involves understanding and preparing necessary travel documents to ensure a smooth and hassle-free journey. Proper documentation is crucial whether traveling domestically or internationally. Here's a comprehensive guide to the travel documents required by Air India:</p>
+                    <h3>Photo Identification Proof</h3>
+                    <p>A government-issued photo ID is mandatory. Acceptable IDs include:</p>
+                    <ul>
+                        <li>Aadhaar Card</li>
+                        <li>Voter ID</li>
+                        <li>Passport</li>
+                        <li>Driving License</li>
+                        <li>PAN Card</li>
+                        <li>Government/Defense Photo ID</li>
+                        <li>School/College ID (for students)</li>
+                    </ul>
+                    <h3>E-ticket or Paper Ticket</h3>
+                    <p>A printed copy of the e-ticket or the paper ticket should be carried for verification at check-in and boarding.</p>
+                    <h3>Boarding Pass</h3>
+                    <p>After check-in, either online or at the airport, passengers need to ensure they have their boarding pass ready.</p>
+                    <h3>Special Documents</h3>
+                    <ul>
+                        <li>For infants and children, a birth certificate or school ID may be required.</li>
+                        <li>Senior citizens should carry proof of age to avail of discounts.</li>
+                        <li>Armed forces personnel should carry valid service IDs and relevant travel authorization, if applicable.</li>
+                    </ul>
+                    <p>Check<a href="#"> Air India travel document requirements</a> before traveling.</p>
+                </section>
+                <section>
+                    <h2><strong>Onboarding Services Provided by Air India</strong></h2>
+                    <ul>
+                        <li>Comfortable and spacious seats with adjustable headrests and ample legroom.</li>
+                        <li>Welcome kits with blankets, pillows, and hygiene kits (especially in Business/First Class).</li>
+                        <li>Attentive cabin crew ready to assist with any needs, ensuring a pleasant journey.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2><strong>Steps to Check the Flight Status of an Air India Flight</strong></h2>
+                    <h3>Via Air India Website/App:</h3>
+                    <ul>
+                        <li>Open the Air India official website or mobile app.</li>
+                        <li>Go to the ‘Flight Status’ section.</li>
+                        <li>Provide your flight number, departure date, and route.</li>
+                        <li>Get real-time updates on departure and arrival times, gate numbers, and any delays.</li>
+                        <li>Opt for SMS or email alerts for continuous updates on your flight status.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2><strong>Special Allowances Provided by Air India</strong></h2>
+                    <ul>
+                        <li>Options for vegetarian, diabetic, gluten-free, and other dietary requirements.</li>
+                        <li>Assistance provided for children traveling alone, ensuring their safety and well-being.</li>
+                        <li>Special arrangements can be made for passengers requiring medical assistance during the flight.</li>
+                        <li>Guidelines and special care provided for expectant mothers traveling with Air India.</li>
+                    </ul>
+                    <p>Know more about <a href="#">Air India Special Assistance.</a></p>
+                </section>
+                <section>
+                    <h2><strong>Air India Customer Care Information</strong></h2>
+                    <ul>
+                        <li>Call their toll-free number or the dedicated customer support line - 01169329333, 01169329999, 18602331407.</li>
+                        <li>Send your queries to Air India's official customer service email address - contactus@airindia.in.</li>
+                        <li>Visit Air India's customer service desks at airports for immediate assistance.</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="interlink-cont">
+                <h2>Trending Routes</h2>
+                <div class="interlink-box-cont">
+                    <div class="interlink_boxes"><a href="#">Goa To Delhi Flights</a></div>
+                    <div class="interlink_boxes"><a href="#">Kannur To Doha Flights</a></div>
+                    <div class="interlink_boxes"><a href="#">darbhanga to mumbai flights</a></div>
+                    <div class="interlink_boxes"><a href="#">doha to gorakhpur flights</a></div>
+                    <div class="interlink_boxes"><a href="#">hyderabad to patna flights</a></div>
+                    <div class="interlink_boxes"><a href="#">patna to ahmedabad flights</a></div>
+                    <div class="interlink_boxes"><a href="#">chandigarh to patna flights</a></div>
+                    <div class="interlink_boxes"><a href="#">bhubaneswar to jharsuguda flights</a></div>
+                    <div class="interlink_boxes"><a href="#">lucknow to ahmedabad flights</a></div>
+                    <div class="interlink_boxes"><a href="#">lucknow to jaipur flights</a></div>
+                    <div class="interlink_boxes"><a href="#">jaipur to bhubaneswar flights</a></div>
+                    <div class="interlink_boxes"><a href="#">mumbai to bareilly flights</a></div>
+                    <div class="interlink_boxes"><a href="#">bagdogra to hyderabad flights</a></div>
+                    <div class="interlink_boxes"><a href="#">baddogra to chennai flights</a></div>
+                    <div class="interlink_boxes"><a href="#">bangalore to durgapur flights</a></div>
+                    <div class="interlink_boxes"><a href="#">chandigarh to lucknow flights</a></div>
+                    <div class="interlink_boxes"><a href="#">lucknow to bhubaneswar flights</a></div>
+                    <div class="interlink_boxes"><a href="#">patna to jaipur flights</a></div>
+                </div>
+            </div>
+            <div class="interlink-cont">
+                <h2>Popular Routes</h2>
+                <div class="interlink-box-cont">
+                    <div class="interlink_boxes"><a href="#">delhi to bangalore flights</a></div>
+                    <div class="interlink_boxes"><a href="#">delhi to deoghar flights</a></div>
+                    <div class="interlink_boxes"><a href="#">deoghar to delhi flights</a></div>
+                    <div class="interlink_boxes"><a href="#">Kolkata to deoghar flights</a></div>
+                    <div class="interlink_boxes"><a href="#">srinagar to delhi flights</a></div>
+                    <div class="interlink_boxes"><a href="#">deoghar to kolkata flights</a></div>
+                    <div class="interlink_boxes"><a href="#">kochi to guwahati flights</a></div>
+                    <div class="interlink_boxes"><a href="#">delhi to ranchi flights</a></div>
+                    <div class="interlink_boxes"><a href="#">delhi to darbhanga flights</a></div>
+                    <div class="interlink_boxes"><a href="#">bangalore to bidar flights</a></div>
+                    <div class="interlink_boxes"><a href="#">mumbai to lucknow flights</a></div>
+                    <div class="interlink_boxes"><a href="#">mumbai to patna flights</a></div>
+                    <div class="interlink_boxes"><a href="#">doha to kannur flights</a></div>
+                    <div class="interlink_boxes"><a href="#">bareilly to delhi flights</a></div>
+                    <div class="interlink_boxes"><a href="#">chennai to guwahati flights</a></div>
+                    <div class="interlink_boxes"><a href="#">guwahati to kochi flights</a></div>
+                    <div class="interlink_boxes"><a href="#">kolkata to itanagar flights</a></div>
+                    <div class="interlink_boxes"><a href="#">mumbai to gorakhpur flights</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="layout2">
+                <div class="lout-1">
+                    <div class="lout-2">
+                        <div class="airline-container">
+                            <h2>Air India Airline Info</h2>
+                            <div class="flight-pg-sect">
+                                <img src="https://images.ixigo.com/image/upload/airlines/1bf238ebfc1e5f1a5aa9a09401e739e2-crocs.webp" height="250px" width="260px">
+                                <div class="sub-head">Airline code</div>
+                                <div class="sub-cont">AI</div>
+                                <div class="contact">
+                                    <div class="sub-head">Contact Ino</div>
+                                    <div class="sub-cont"><b>Call center:</b>0124-2641407</div>
+                                </div>
+                                <div class="contact">
+                                    <div class="sub-head">Website</div>
+                                    <div class="sub-cont"><a href="#">airindia.in</a></div>
+                                </div>
+                                <div class="contact">
+                                    <div class="sub-head">Corporate</div>
+                                    <div class="sub-cont">Air India 113, Airlines House, Gurudwara Rakabganj Road, New Delhi, Delhi 110001</div>
+                                    <div class="sub-head">Flight Status</div>
+                                    <div class="sub-cont"><a href="#">Air India Flight Status</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="airline-links">
+                        <h2>Useful Resources</h2>
+                        <div class="flight-pg-sect">
+                            <a href="#">Air India Baggage Allowance</a>
+                            <a href="#">Air India Travel Documents</a>
+                            <a href="#">Air India Specail Assistance</a>
+                            <a href="#">Air India Customer Support</a>
+                        </div>
+                    </div>
+                    <div class="airline-links">
+                        <h2>Domestic Airlines</h2>
+                        <div class="flight-pg-sect">
+                            <a href="#">Air India Airlines</a>
+                            <a href="#">Indigo Airlines</a>
+                            <a href="#">Air India Express</a>
+                            <a href="#">AirAsia India</a>
+                            <a href="#">Akasa Air</a>
+                            <a href="#">SpiceJet</a>
+                            <a href="#">Alliance Air</a>
+                        </div>
+                    </div>
+                    <div class="airline-links">
+                        <h2>International Airlines</h2>
+                        <div class="flight-pg-sect">
+                            <a href="#">air china flights</a>
+                            <a href="#">air arabia flights</a>
+                            <a href="#">austrian airlines</a>
+                            <a href="#">british airways</a>
+                            <a href="#">cathay pacific airlines</a>
+                            <a href="#">delta airlines</a>
+                            <a href="#">emirates airlines</a>
+                            <a href="#">etihad airways</a>
+                            <a href="#">finn air flights</a>
+                            <a href="#">KLM Airlines</a>
+                            <a href="#">kuwait airways</a>
+                            <a href="#">malaysia airlines</a>
+                            <a href="#">oman airlines</a>
+                            <a href="#">qantas airlines</a>
+                            <a href="#">qatar airways</a>
+                            <a href="#">jazeera airways</a>
+                            <a href="#">royal jordanian airlines</a>
+                            <a href="#">srilankan airlines</a>
+                            <a href="#">thai airlines</a>
+                            <a href="#">tiger airways</a>
+                        </div>
+                    </div>
+                    <div class="footer-flight-app">
+                        <div class="app-desc-cont">
+                            <div class="app-icon">
+                                <img src="https://images.ixigo.com/image/upload/misc/b4d0b25bd8647a7332bfbdf7089f341d-bsbdj.png" alt="app icon" height="54px" width="54px">
+                            </div>
+                            <div class="app-rate">
+                                <div class="app-name">ixigo Flights app</div>
+                                <div class="app-rating">Rated 4.4/5</div>
+                                <div class="app-review">139,413 reviews</div>
+                            </div>
+                            <div class="app-about">Book flights, hotels & buses with the ixigo app. Download now!</div>
+                        </div>
+                        <div class="app-dwnld">
+                            <a href="#">
+                                <img src="https://images.ixigo.com/image/upload/airlines/de8ca8f277c371762c34baacc0d9fcd7-fmsdr.webp" alt="get it on google play" height="38px" width="125px">
+                            </a>
+                            <a href="#">
+                                <img src="https://images.ixigo.com/image/upload/airlines/ed50a9178eb2ab5b6120c1eb7ece908c-qrrmh.webp" alt="download on app store" height="38px" width="125px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="div">
+            <div class="foot-nav-tabs">
+                <ul>
+                    <li>AIR INDIA POPULAR FLIGHT ROUTES</li>
+                    <li>TOP FLIGHT ROUTES</li>
+                    <li>TOP SEARCH FLIGHTS</li>
+                    <li>POPULAR FLIGHTS</li>
+                    <li>INFO</li>
+                </ul>
+            </div>
+            <div class="foot-nav-cont">
+                <ul>
+                    <li><a href="#">mumbai to delhi flights</a></li>
+                    <li><a href="#">delhi to mumbai flights</a></li>
+                    <li><a href="#">bengaluru to delhi flights</a></li>
+                    <li><a href="#">delhi to patna flights</a></li>
+                    <li><a href="#">pune to delhi flights</a></li>
+                    <li><a href="#">mumbai to bengaluru flights</a></li>
+                    <li><a href="#">delhi to bengaluru flights</a></li>
+                    <li><a href="#">bangalore to mumbai flights</a></li>
+                    <li><a href="#">delhi to pune flights</a></li>
+                    <li><a href="#">kolkata to delhi flights</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-nav-links">
+            <div class="max-width">
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">INVESTOR RELATIONS</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">CSR</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">MOBILE</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">PRIVACY</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">CUSTOMER SERVICE</a></li>
+                </ul>
+                <ul>
+                    <li class="dot-point"></li>
+                    <li><a href="#">ABHIBUS</a></li>
+                    <li class="dot-point"></li>
+                    <li><a href="#">CONFIRMTKT</a></li>
+                </ul>
+                <ul class="r-float">
+                    <li><a aria-label="facebook" href="https://www.facebook.com/ixigo"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a aria-label="twitter" href="https://www.twitter.com/ixigo"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a aria-label="youtube" href="https://www.youtube.com/user/ixigorocks"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+                <div class="u-clear"></div>
+            </div>
+        </div>
+        <div class="foot-copyright">
+            <label>
+                © <span class="cprgt-year">2025</span> Le Travenues Technology Ltd. India. All brands are trademarks of their respective owners.
+            </label>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<!-- https://www.ixigo.com/airlines/air_india-ai   website link -->
