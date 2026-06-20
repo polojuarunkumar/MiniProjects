@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: #f2f2f2;
-}
 header{
     height: auto;
     background-color: #FFFFFF;
@@ -471,12 +468,39 @@ section h4{
 .flight-pg-sect{
     border-radius: 3px;
     box-shadow: 0 0 5px rgba(0,0,0,.15);
-    background-color: #FFFFFF;
     color: rgba(0,0,0,.64);
     margin-bottom: 40px;
-    padding: 20px;
     height: auto;
-    width: 260px;
+    width: 294px;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+#col{
+    color: #0552A6;
+    font: 14px sans-serif;
+    padding: 10px 0;
+}
+.indigoLogo{
+    height: 120px;
+    width: 100%;
+    background-color: #001B94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+}
+.flight-info{
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: auto;
+}
+
+.indigo-info{
+    height: 25.2px;
+    width: 253.4px;
+    color: #17181C;
+    font: 18px sans-serif;
+    font-weight: 500;
 }
 .airline-container h2{
     width: 300px;
@@ -486,10 +510,18 @@ section h4{
     height: auto;
     width: 260px;
     margin-top: 5px;
+    color: #00000061;
+    font: 16px san-serif;
+}
+.sub-head p{
+    color: #ADAFB8;
+    font: 16px sans-serif;
 }
 .sub-cont{
     width: 260px;
-    margin-top: 5px;
+    margin-top: 5px 0;
+    color: #17181C;
+    font: 15px sans-serif;
 }
 .contact{
     width: 260px;
@@ -500,6 +532,21 @@ section h4{
     text-decoration: none;
     color:#EC5B24;
     font-weight: 400;
+}
+.website-links1{
+    margin-top: 5px;
+    height: 20px;
+    padding: 5px 0;
+}
+.website-links1 a{
+    color: #0770E4;
+    font: 14px sans-serif;
+    font-weight: 100;
+}
+.website-links1 i{
+    color: #0770E4;
+    background-color: transparent;
+    margin-left: 4px;
 }
 .flight-pg-sect a{
     height: 33.8px;
