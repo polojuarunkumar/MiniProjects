@@ -4,7 +4,7 @@ A frontend clone of the popular travel booking platform, **ixigo**. This project
 
 ## 🚀 Live Demo
 Check out the live interactive preview of the project here:
-🔗 **[Live Demo Link](https://polojuarunkumar.github.io/MiniProjects/ixigo/)**
+🔗 **[Live Demo Link](https://polojuarunkumar.github.io/MiniProjects/ixigo/indigoFlight.html)**
 
 ---
 
